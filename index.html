@@ -27,21 +27,27 @@
             border-left:4px solid #88aadd;
             padding:12px 16px;
         }
+        /* 目录链接样式 */
+        .list a {
+            display: block;
+            margin:12px 0;
+            font-size:18px;
+            color:#0066cc;
+        }
     </style>
 </head>
 <body>
-<h1>XX漫画深度解析</h1>
-<p>这里写你的文字分析内容，和Obsidian排版一致</p>
-<blockquote>引用分析文字</blockquote>
+<h1>XX漫画 全话解析合集</h1>
+<p>这里是漫画总介绍、前言、系列说明</p>
+<blockquote>系列导读：收录本漫画所有章节分段解读，点击对应话数查看完整图文</blockquote>
 
 <hr>
-<h2>第一部分解读配图</h2>
-<!-- 这里替换第一张图片链接 -->
-<img src="https://files.catbox.moe/8ocnlh.png" alt="分段图2">
-
-<hr>
-<h2>第二部分解读配图</h2>
-<!-- 这里替换第二张图片链接 -->
-<img src="https://files.catbox.moe/yyyyyy.png" alt="分段图2">
+<h2>目录（点击跳转对应章节）</h2>
+<div class="list">
+    <!-- 每新增一话，复制一行，修改href文件名和文字 -->
+    <a href="chapter1.html">第1话 完整解析</a>
+    <a href="chapter2.html">第2话 完整解析</a>
+    <a href="chapter3.html">第3话 完整解析</a>
+</div>
 </body>
 </html>
