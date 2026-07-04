@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 全局统一排版，800px宽度 -->
     <style>
         body {
@@ -11,6 +12,8 @@
             font-size: 16px;
             line-height: 1.7;
             color: #222;
+            /* 给右侧目录留出空白，避免被遮挡 */
+            padding-right: 220px;
         }
         hr {
             margin: 40px 0;
@@ -34,46 +37,92 @@
             margin-bottom: 30px;
             color: #0066cc;
         }
+
+        /* 右侧固定目录侧边栏 */
+        .sidebar-toc {
+            position: fixed;
+            top: 30px;
+            right: 20px;
+            width: 180px;
+            padding: 16px;
+            background: #f7f8fa;
+            border-radius: 6px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .sidebar-toc h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .sidebar-toc a {
+            display: block;
+            margin: 10px 0;
+            font-size: 15px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .sidebar-toc a:hover {
+            text-decoration: underline;
+        }
+        .back-top {
+            margin-top: 20px;
+            padding-top:10px;
+            border-top:1px solid #ddd;
+        }
+
+        /* 手机端自动隐藏侧边目录，恢复正常边距 */
+        @media (max-width: 1100px) {
+            .sidebar-toc {
+                display: none;
+            }
+            body {
+                padding-right:20px;
+            }
+        }
     </style>
 </head>
-<body>
+<body id="page-top">
+<!-- 右侧悬浮目录 -->
+<div class="sidebar-toc">
+    <h3>本页目录</h3>
+    <a href="#t1">影山是安全型依恋+ISTJ</a>
+    <a href="#t2">百目鬼是安全型依恋+ISTP</a>
+    <a href="#t3">矢代是恐惧回避依恋+INFJ</a>
+    <a href="#t4">矢代x影山</a>
+    <a href="#t5">矢代x百目</a>
+    <a href="#t6">影山vs百目鬼</a>
+    <!-- 回到顶部 -->
+    <a href="#page-top" class="back-top">↑ 返回页面顶部</a>
+</div>
+
 <!-- 返回合集首页按钮 -->
 <a href="index.html" class="back">← 返回漫画合集目录</a>
 
-<!-- 替换成你这一话的标题、文字、图片 -->
+<!-- 页面主标题 -->
 <h1>矢代、影山、百目鬼的依恋模式、MBTI、及关系性分析</h1>
-<p>点击回到顶部引索</p>
 
 <hr>
-<h2>影山是安全型依恋+ISTJ</h2>
+<h2 id="t1">影山是安全型依恋+ISTJ</h2>
 <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/影山是安全型依恋+ISTJ.png" alt="影山是安全型依恋+ISTJ">
 
 <hr>
-<h2>百目鬼是安全型依恋+ISTP</h2>
+<h2 id="t2">百目鬼是安全型依恋+ISTP</h2>
 <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/百目鬼是安全型依恋+ISTP.png" alt="百目鬼是安全型依恋+ISTP">
-</body>
-</html>
 
 <hr>
-<h2>矢代是恐惧回避依恋+INFJ</h2>
+<h2 id="t3">矢代是恐惧回避依恋+INFJ</h2>
 <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/矢代是恐惧回避依恋+INFJ1.png" alt="矢代是恐惧回避依恋+INFJ">
-</body>
-</html>
 
 <hr>
-<h2>矢代x影山</h2>
+<h2 id="t4">矢代x影山</h2>
 <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/矢代是恐惧回避依恋+INFJ2-矢代x影山.png" alt="矢代x影山">
-</body>
-</html>
 
 <hr>
-<h2>矢代x百目</h2>
+<h2 id="t5">矢代x百目</h2>
 <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/矢代是恐惧回避依恋+INFJ3_矢代x百目鬼.png" alt="矢代x百目鬼">
-</body>
-</html>
 
 <hr>
-<h2>影山vs百目鬼</h2>
+<h2 id="t6">影山vs百目鬼</h2>
 <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/矢代是恐惧回避依恋+INFJ4_影山vs百目鬼.png" alt="影山vs百目鬼">
 </body>
 </html>
