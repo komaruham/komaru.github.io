@@ -41,17 +41,17 @@
             text-decoration: underline;
         }
 
-        /* 两栏并排布局核心 */
-        .two-column-wrap {
+        /* 三栏并排布局核心 */
+        .three-column-wrap {
             display: flex;
-            gap: 40px; /* 两栏中间空隙 */
+            gap: 30px;
         }
         .column {
-            flex: 1; /* 左右平分宽度各50% */
+            flex: 1;
         }
-        /* 手机屏幕自动变回单列 */
-        @media (max-width: 600px) {
-            .two-column-wrap {
+        /* 平板/手机自动堆叠单列 */
+        @media (max-width: 768px) {
+            .three-column-wrap {
                 flex-direction: column;
                 gap: 20px;
             }
@@ -69,20 +69,25 @@
     <br>3.图片来源为日本纸质漫画拍照。</blockquote>
 
 <h2>设定资料</h2>
-<!-- 两栏容器 -->
-<div class="two-column-wrap">
-    <!-- 左栏：组织关系图谱 -->
+<!-- 三栏容器 -->
+<div class="three-column-wrap">
+    <!-- 第一栏：组织关系图谱 -->
     <div class="column list">
         <h3>组织关系图谱</h3>
         <a href="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/鸣鸟黑道组织图-4年前.png" target="_blank">四年前</a>
         <a href="这里替换鸣鸟黑道组织图-现在 图片raw链接" target="_blank">现在(待上传)</a>
     </div>
-    <!-- 右栏：人物关系图谱 -->
+    <!-- 第二栏：人物关系图谱 -->
     <div class="column list">
         <h3>人物关系图谱</h3>
         <a href="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/鸣鸟人物关系图-四年前.png" target="_blank">四年前</a>
         <a href="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/鸣鸟人物关系图-七原x矢代篇.png" target="_blank">七原x矢代过去篇</a>
         <a href="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/鸣鸟人物关系图-黑羽根篇.png" target="_blank">黑羽根过去篇</a>
+    </div>
+    <!-- 第三栏：设定分析（自行补充链接） -->
+    <div class="column list">
+        <h3>设定分析</h3>
+    <a href="矢代、影山、百目鬼的依恋模式、MBTI、及关系性分析.html">矢代、影山、百目鬼的依恋模式、MBTI、及关系性分析 </a>
     </div>
 </div>
 
