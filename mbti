@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mbti - 漫画人物MBTI分析</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f8f9fa;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #222;
+        }
+        /* 二级标题区块 */
+        h2 {
+            margin: 60px 0 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #6688cc;
+            color: #2d3748;
+            scroll-margin-top: 30px;
+        }
+        /* 图片样式 */
+        .img-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+            display: block;
+        }
+        /* 右上角悬浮目录 */
+        .sidebar-toc {
+            position: fixed;
+            top: 30px;
+            right: 20px;
+            width: 220px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            z-index: 999;
+        }
+        .sidebar-toc h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        .sidebar-toc ul {
+            list-style: none;
+        }
+        .sidebar-toc li {
+            margin: 8px 0;
+        }
+        .sidebar-toc a {
+            color: #3168b8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .sidebar-toc a:hover {
+            color: #1a457c;
+            text-decoration: underline;
+        }
+        /* 移动端适配：小屏幕隐藏悬浮目录 */
+        @media (max-width: 768px) {
+            .sidebar-toc {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 右上角悬浮目录 -->
+    <div class="sidebar-toc">
+        <h3>页面目录</h3>
+        <ul>
+            <li><a href="#yashiro">矢代是INTJ</a></li>
+            <li><a href="#hyakume">百目鬼是ISTP</a></li>
+            <li><a href="#kageyama">影山是ISTJ</a></li>
+        </ul>
+    </div>
+
+    <h1>鸣鸟不飞 人物MBTI分析汇总</h1>
+
+    <!-- 区块1：矢代 -->
+    <h2 id="yashiro">矢代是INTJ</h2>
+    <div class="img-box">
+        <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/MBTI-矢代是INTJ.png" alt="矢代INTJ分析截图">
+    </div>
+
+    <!-- 区块2：百目鬼 -->
+    <h2 id="hyakume">百目鬼是ISTP</h2>
+    <div class="img-box">
+        <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/MBTI-百目鬼是ISTP1.png" alt="百目鬼ISTP截图1">
+        <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/MBTI-百目鬼是ISTP2.png" alt="百目鬼ISTP截图2">
+    </div>
+
+    <!-- 区块3：影山 -->
+    <h2 id="kageyama">影山是ISTJ</h2>
+    <div class="img-box">
+        <img src="https://cdn.jsdelivr.net/gh/komaruham/saezurucomic-img-bed/设定/MBTI-影山是ISTJ.png" alt="影山ISTJ分析截图">
+    </div>
+</body>
+</html>
