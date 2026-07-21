@@ -75,6 +75,24 @@
             color: #1a457c;
             text-decoration: underline;
         }
+        /* 返回主页按钮单独样式区分 */
+        .back-home {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid #eee;
+        }
+        .back-home a {
+            display: block;
+            text-align: center;
+            padding: 6px 0;
+            background-color: #3168b8;
+            color: #fff !important;
+            border-radius: 6px;
+        }
+        .back-home a:hover {
+            background-color: #1a457c;
+            text-decoration: none;
+        }
         /* 移动端适配：小屏幕隐藏悬浮目录 */
         @media (max-width: 768px) {
             .sidebar-toc {
@@ -92,6 +110,10 @@
             <li><a href="#hyakume">百目鬼是ISTP</a></li>
             <li><a href="#kageyama">影山是ISTJ</a></li>
         </ul>
+        <!-- 新增返回主页按钮 -->
+        <div class="back-home">
+            <a href="index.html">返回主页</a>
+        </div>
     </div>
 
     <h1>鸣鸟不飞 人物MBTI分析汇总</h1>
